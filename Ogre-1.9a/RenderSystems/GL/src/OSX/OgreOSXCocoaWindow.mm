@@ -123,7 +123,7 @@ namespace Ogre {
 		int winx = 0, winy = 0;
 		int depth = 32;
 #if OGRE_NO_LIBCPP_SUPPORT == 0
-        NameValuePairList::const_iterator opt{};
+        NameValuePairList::const_iterator opt;{};
 #else
         NameValuePairList::const_iterator opt;
 #endif
@@ -240,7 +240,7 @@ namespace Ogre {
         else
         {
 #if OGRE_NO_LIBCPP_SUPPORT == 0
-            NameValuePairList::const_iterator param_useNSView_pair{};
+            NameValuePairList::const_iterator param_useNSView_pair;{};
 #else
             NameValuePairList::const_iterator param_useNSView_pair;
 #endif

@@ -356,7 +356,7 @@ endif()
 #detect current host platform
 set( TOOL_OS_SUFFIX "" )
 if( CMAKE_HOST_APPLE )
- set( ANDROID_NDK_HOST_SYSTEM_NAME "darwin-x86" )
+ set( ANDROID_NDK_HOST_SYSTEM_NAME "darwin-x86_64" )
 elseif( CMAKE_HOST_WIN32 )
  set( ANDROID_NDK_HOST_SYSTEM_NAME "windows" )
  set( TOOL_OS_SUFFIX ".exe" )
@@ -1101,7 +1101,7 @@ endif()
 #   BUILD_ANDROID : always TRUE
 #   BUILD_WITH_ANDROID_NDK : TRUE if NDK is used
 #   BUILD_WITH_STANDALONE_TOOLCHAIN : TRUE if standalone toolchain is used
-#   ANDROID_NDK_HOST_SYSTEM_NAME : "windows", "linux-x86" or "darwin-x86" depending on host platform
+#   ANDROID_NDK_HOST_SYSTEM_NAME : "windows", "linux-x86" or "darwin-x86_64" depending on host platform
 #   ANDROID_NDK_ABI_NAME : "armeabi", "armeabi-v7a" or "x86" depending on ANDROID_ABI
 #   ANDROID_ARCH_NAME : "arm" or "x86" or "mips" depending on ANDROID_ABI
 #   TOOL_OS_SUFFIX : "" or ".exe" depending on host platform
